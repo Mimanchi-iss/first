@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录</title>
+  <link rel="stylesheet" href="../assets/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/public.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <!-- 顶栏 -->
+  <div class="top">
+    <div class="center">
+      <!-- 左侧三个 -->
+      <div class="top-left">
+        <a href="#">收藏鲜花网(hua.com)</a>
+        <a href="#">关注微信
+          <img src="../img/index/wxguanjia_qrcode.png" alt="">
+        </a>
+        <a href="#">花礼网app</a>
+      </div>
+      <!-- 右侧 -->
+      <div class="top-right">
+        <a href="login.html">你好,请登录</a>
+        <a href="go.html">注册</a>
+        <a href="#">订单查询
+        </a>
+        <span>客户服务 ﹀
+          <ul>
+            <li><a href="">在线付款</a></li>
+            <li><a href="">帮助中心</a></li>
+            <li><a href="">售后服务</a></li>
+            <li><a href="">配送范围</a></li>
+            <li><a href="">留言反馈</a></li>
+          </ul>
+        </span>
+        <a href="car.html">购物车<span>(0)</span></a>
+        <span>中国鲜花礼品网:中国鲜花领先品牌</span>
+      </div>
+    </div>
+  </div>
+  <!-- logo部分 -->
+  <div class="logo">
+    <div class="center">
+      <!-- logo图 -->
+      <img src="../img/index/logo.jpg" alt="">
+      <!-- 搜索框 -->
+      <div class="search">
+        <input type="text" placeholder="鲜花">
+        <button>搜索</button>
+        <ul class="search-result"></ul>
+
+        <br>
+        <!-- <p>
+          <a href="#">红玫瑰</a>
+          <a href="#">永生花</a>
+          <a href="#">生日鲜花</a>
+          <a href="#">礼品卡</a>
+        </p> -->
+      </div>
+      <!-- 电话客服 -->
+      <span><a href="#">🎧在线客服</a></span>
+
+      <span>📞400-889-8188</span>
+
+    </div>
+  </div>
+
+
+  <!-- 中间 -->
+  <div class="mid">
+    <div class="login-box">
+      <div class="login-type">
+        <h2>账号登录</h2>
+        <h2>微信扫码登录</h2>
+      </div>
+      <!-- input框 -->
+      <p><a href="#">📱手机验证码登录</a></p>
+      <form action="" id="login">
+      <span class="login_error hide">用户名或密码错误</span>
+        <label for="username" >
+          <input type="text" name="username" id="username" placeholder="请输入手机号/邮箱">
+        </label>
+        <label for="password">
+          <input type="password" name="password" id="password" placeholder="请输入密码">
+        </label>
+        <br>
+        <button type="submit" class="login btn btn-success">登录</button> <br>
+        <a href="#">忘记密码?</a>
+      </form>
+
+
+      <!-- 注册 -->
+      <div class="go">
+        <span>🐧QQ</span>
+        <span>💸支付宝</span>
+        <a href="go.html">注册账号></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 底部 -->
+</body>
+<script src="../js/search.js"></script>
+<script src="../assets/jquery.min.js"></script>
+<script src="../assets/jquery.validate.min.js"></script>
+<script src="../assets/messages_zh.min.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/login.js"></script>
+</html>

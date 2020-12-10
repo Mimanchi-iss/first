@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Document</title></head><body><script>/*
+      知识点
+        + localStorage
+        + 本次存储的一种形式
+
+      特点:
+        + 只能由前端操作, 后端不行
+        + 存储大小, 大概是 20M 左右
+        + 只能存储字符串形式
+        + 永久保存, 除非手动删除
+        + 可以跨越页面通讯
+
+      操作:
+        1. 添加一条信息
+          => window.localStorage.setItem(名字, 值)
+        2. 修改一条信息
+          => window.localStorage.setItem(名字, 值)
+          => 再次设置同一条信息就是修改
+        3. 获取一条信息
+          => window.localStorage.getItem(名字)
+        4. 删除一条信息
+          => window.localStorage.removeItem(名字)
+    */
+
+    var obj = { name: 'Jack' }
+
+    // 1. 添加一条信息
+    window.localStorage.setItem('a', 100)
+
+    // 2. 修改一条信息
+    window.localStorage.setItem('a', JSON.stringify(obj))
+
+    // 3. 获取一条信息
+    const res = JSON.parse(window.localStorage.getItem('a'))
+    console.log(res)
+
+    // 4. 删除一条信息
+    window.localStorage.removeItem('a')</script></body></html>

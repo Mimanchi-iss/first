@@ -1,0 +1,603 @@
+//顶栏部分
+.top{
+  width: 100%;
+  height: 30px;
+  background-color: #F3F5F7;
+  font-size: 12px;
+  line-height: 30px;
+  color: black;
+  .top-left{
+    float: left;
+    width: 500px;
+    a{
+      display: inline-block;
+      position: relative;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: black;
+    }
+    a:nth-of-type(1){
+      display: inline;
+    }
+    a img{
+      position: absolute;
+      width: 100px;
+      top: 30px;
+      left: 0px;
+      display: none;
+    }
+    a:hover{
+      background-color: white;
+    }
+    a:hover img{
+      display: block;
+    }
+  }
+  .top-right{
+    float: right;
+    width: 680px;
+    // display: flex;
+    a.hide{
+      display: none;
+    }
+    span.hide{
+      display: none;
+    }
+  }
+  a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: orange;
+  }
+  
+  span{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    
+    ul{
+      color: black;
+      position: absolute;
+      width: 80px;
+      padding: 5px;
+      background-color: white;
+      z-index: 9;
+      // border: 1px solid black;
+      top: 30px;
+      left: 0px;
+      display: none;
+      li{
+      text-align: center;
+      }
+    }
+  }
+  span:hover ul{
+    display: block;
+  }
+}
+
+// logo部分
+.logo{
+  height: 120px;
+  padding-top: 35px;
+  background-color: #F7F9FA;
+  img{
+    float: left;
+    width: 250px;
+    margin-right: 100px;
+  }
+  .search{
+    width: 450px;
+    float: left;
+    position: relative;
+    input{
+      height: 55px;
+      width: 450px;
+      border: 1px solid orange;
+      border-radius: 30px;
+      padding-left: 20px;
+      padding-right: 105px;
+      box-sizing: border-box;
+    }
+    button{
+      width: 100px;
+      height: 55px;
+      border-radius: 30px;
+      position: absolute;
+      right: 0px;
+      top: 0;
+      background-color: orangered;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    ul.active{
+      display: block;
+    }
+    p{
+      width: 450px;
+      height: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding-left: 50px;
+      a{
+        height: 20px;
+        margin-right: 30px;
+        color: #BAD1EB;
+        text-decoration: none ;
+      }
+      a:hover{
+        color: orange;
+      }
+    }
+  }
+  span{
+    text-decoration: none;
+    height: 55px;
+    width: 120px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 55px;
+  }
+  a:hover{
+    color: orange;
+  }
+}
+
+//分类部分
+.all{
+  position: relative;
+  height: 650px;
+  box-sizing: border-box;
+  background-color: #F7F9FA;
+  p{
+    width: 100%;
+    height: 50px;
+    span{
+      display: inline-block;
+      width: 250px;
+      background-color: orangered;
+      border-radius: 10px 10px 0 0;
+      height: 50px;
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+    }
+    a{
+      display: inline-block;
+      color: black;
+      font-size: 18px;
+      font-weight: 700;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-decoration: none;
+    }
+    a:hover{
+      color: orange;
+    }
+  }
+  .center{
+  position: relative;
+
+  }
+  .type{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 250px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 9;
+    ul{
+      border-bottom: 1px dashed white;
+      padding: 20px;
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      span{
+        float: right;
+      }
+      ol{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;;
+      }
+      ol li{
+        float: left;
+        font-size: 14px;
+      }
+      a:hover{
+        color: orange;
+      }
+      
+    }
+    
+  }
+  //永生花
+  .yong{
+    .all-yong, .cakes, .prizes{
+      width: 950px;
+      height: 600px;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 250px;
+      display: none;
+      .all-yong-type{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        p{
+          width: 100%;
+          height: 40px;
+          color: black;
+          font-weight: 700;
+        }
+        .down{
+          height: 150px;
+          display: flex;
+          .n1 {
+            width: 112px;
+            margin-right: 50px;
+            p{
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  .yong:hover{
+    background-color: white;
+    color: black;
+  }
+  .yong:hover a{
+    color: black;
+  }
+  .yong:hover span{
+    color: white;
+  }
+  .yong:hover .all-yong{
+    display: block;
+  }
+  .cake:hover .cakes{
+    display: block;
+  }
+  .prize:hover .prizes{
+    display: block;
+  }
+  //蛋糕
+  .cakes, .prizes{
+    padding:20px;
+    box-sizing: border-box;
+    display: block;
+    .title{
+      height: 30px;
+      font-weight: 700;
+      color: black;
+    }
+    .citys{
+      .city{
+        color: black;
+        float: left;
+        margin-right: 20px;
+        font-size: 10px;
+      }
+    }
+    .c1, .p1{
+      float: left;
+      width: 150px;
+      height: 150px;
+      p{
+        color: black;
+        text-align: center;
+      }
+    }
+    
+    .cakes-type{
+      height: 400px;
+    }
+  }
+  .prize .prize-pai{
+    height: 200px;
+  }
+  .prizes .prize-type{
+    height: 400px;
+    .p-t{
+      float: left;
+      width: 80px;
+      margin-right: 40px;
+      img{
+        width: 100%;
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+
+  //轮播图
+  .banner{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    ul{
+      width: 100%;
+      height: 600px;
+      position: relative;
+      li{
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        transition:  opacity .4s linear;
+        opacity: 0;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    li.active{
+      opacity: 1;
+    }
+    ol {
+      width: 200px;
+      height: 30px;
+      background-color: rgba(0,0,0,.5);
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      transform: translateX(-50%);
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      li {
+        width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      cursor: pointer;
+      }
+      li.active{
+        background-color: cyan;
+      }
+    }
+    .leftRightBox {
+      width: 60%;
+      height: 60px;
+      position: absolute;
+      left: 30%;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: space-between;
+    }
+    .leftRightBox > div{
+      width: 60px;
+      background-color: rgba(0,0,0,.5);
+      display: flex;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    
+  }
+}
+.all .center p span a{
+  color: white;
+}
+.all .center p span:hover a{
+  color: cyan;
+}
+
+//圣诞树
+.tree .tree-under{
+  height: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #40A48D;
+  overflow: hidden;
+  margin-bottom: 40px;
+  .tree-1{
+    float: left;
+    margin: 20px 5px;
+    width: 24%;
+    height: 210px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    .tree-font{
+      float: left;
+      width: 50%;
+      margin-top: 50px;
+      margin-left: 15px;
+      h2, h3{
+        font-size: 16px;
+      }
+      h3{
+        color: orangered;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+    img{
+      width: 60%;
+      position: absolute;
+      right: 0;
+      top: 20px;
+    }
+  }
+}
+
+//服务
+.service{
+  padding-top: 50px;
+  height: 250px;
+  border-top: 2px solid black;
+  box-sizing: border-box;
+  div{
+    float: left;
+  }
+  .ser, .hot, .zhuan, .call{
+    width: 200px;
+    height: 200px;
+    h3{
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    ul{
+      float: left;
+      margin-right: 10px;
+      li{
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        a{
+          color: black;
+        }
+      }
+    }
+  }
+  .zhuan{
+    width: 180px;
+  }
+  .call{
+    width: 220px;
+    p{
+    font-size: 12px;
+    height: 18px;
+    }
+    h2{
+      width: 100px;
+      height: 30px; 
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      border-radius: 15px;
+      background-color: orangered;
+      color: white;
+    }
+  }
+  .app, .wx{
+    width: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    img{
+      width: 100%;
+    }
+    h2{
+      font-size: 14px;
+    }
+  }
+}
+
+//底栏
+.below{
+  width: 100%;
+  height: 250px;
+  background-color: #232628;
+  overflow: hidden;
+  h3{
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 20px;
+    margin-bottom: 20px;
+    a:nth-of-type(1){
+      padding-left: 0;
+    }
+    a{
+      display: block;
+      float: left;
+      padding-left: 30px;
+      padding-right: 30px;
+      color: white;
+      border-right: 2px solid white;
+    }
+    a.last{
+      padding-right: 0;
+      border: 0;
+    }
+
+  }
+  p{
+    font-size: 14px;
+    color: #71797F;
+    width: 100%;
+    margin: 0 auto;
+    height: 22px;
+    line-height: 22px;
+  }
+  img:nth-of-type(1){
+    transform: scale(0.5);
+    margin-left: -80px;
+  }
+  img:nth-of-type(2){
+    transform: scale(0.5);
+    margin-left: -140px;
+  }
+  img:nth-of-type(3){
+    transform: scale(0.4);
+    margin-left: -90px;
+    margin-top: -30px;
+  }
+  img:nth-of-type(4){
+    transform: scale(0.4);
+    margin-left: -40px;
+    margin-top: -30px;
+  }
+  p:nth-last-of-type(1){
+    margin-top: -30px;
+  }
+}
+
+
+//搜索框下的列表
+.logo .search .search-result {
+  width: 350px;
+  height: 230px;
+  padding: 15px;
+  position: absolute;
+  z-index: 9;
+  background-color: white;
+  left: 20px;
+  border-radius: 0 0 10px 10px;
+  box-sizing: border-box;
+
+  display: none;
+  li{
+    list-style: none;
+      width: 320px;
+      height: 20px;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+      text-indent: 1em;
+  }
+  li:hover{
+    background-color: #ccc;
+  }
+}

@@ -1,0 +1,578 @@
+.top {
+  width: 100%;
+  height: 30px;
+  background-color: #F3F5F7;
+  font-size: 12px;
+  line-height: 30px;
+  color: black;
+}
+.top .top-left {
+  float: left;
+  width: 500px;
+}
+.top .top-left a {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+}
+.top .top-left a:nth-of-type(1) {
+  display: inline;
+}
+.top .top-left a img {
+  position: absolute;
+  width: 100px;
+  top: 30px;
+  left: 0px;
+  display: none;
+}
+.top .top-left a:hover {
+  background-color: white;
+}
+.top .top-left a:hover img {
+  display: block;
+}
+.top .top-right {
+  float: right;
+  width: 680px;
+}
+.top .top-right a.hide {
+  display: none;
+}
+.top .top-right span.hide {
+  display: none;
+}
+.top a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+.top a:hover {
+  color: orange;
+}
+.top span {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.top span ul {
+  color: black;
+  position: absolute;
+  width: 80px;
+  padding: 5px;
+  background-color: white;
+  z-index: 9;
+  top: 30px;
+  left: 0px;
+  display: none;
+}
+.top span ul li {
+  text-align: center;
+}
+.top span:hover ul {
+  display: block;
+}
+
+.logo {
+  height: 120px;
+  padding-top: 35px;
+  background-color: #F7F9FA;
+}
+.logo img {
+  float: left;
+  width: 250px;
+  margin-right: 100px;
+}
+.logo .search {
+  width: 450px;
+  float: left;
+  position: relative;
+}
+.logo .search input {
+  height: 55px;
+  width: 450px;
+  border: 1px solid orange;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 105px;
+  box-sizing: border-box;
+}
+.logo .search button {
+  width: 100px;
+  height: 55px;
+  border-radius: 30px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  background-color: orangered;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.logo .search ul.active {
+  display: block;
+}
+.logo .search p {
+  width: 450px;
+  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 50px;
+}
+.logo .search p a {
+  height: 20px;
+  margin-right: 30px;
+  color: #BAD1EB;
+  text-decoration: none;
+}
+.logo .search p a:hover {
+  color: orange;
+}
+.logo span {
+  text-decoration: none;
+  height: 55px;
+  width: 120px;
+  float: right;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 55px;
+}
+.logo a:hover {
+  color: orange;
+}
+
+.all {
+  position: relative;
+  height: 650px;
+  box-sizing: border-box;
+  background-color: #F7F9FA;
+}
+.all p {
+  width: 100%;
+  height: 50px;
+}
+.all p span {
+  display: inline-block;
+  width: 250px;
+  background-color: orangered;
+  border-radius: 10px 10px 0 0;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.all p a {
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+.all p a:hover {
+  color: orange;
+}
+.all .center {
+  position: relative;
+}
+.all .type {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 250px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 9;
+}
+.all .type ul {
+  border-bottom: 1px dashed white;
+  padding: 20px;
+}
+.all .type ul a {
+  text-decoration: none;
+  color: white;
+}
+.all .type ul span {
+  float: right;
+}
+.all .type ul ol {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.all .type ul ol li {
+  float: left;
+  font-size: 14px;
+}
+.all .type ul a:hover {
+  color: orange;
+}
+.all .yong .all-yong, .all .yong .cakes, .all .yong .prizes {
+  width: 950px;
+  height: 600px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 250px;
+  display: none;
+}
+.all .yong .all-yong .all-yong-type, .all .yong .cakes .all-yong-type, .all .yong .prizes .all-yong-type {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.all .yong .all-yong .all-yong-type p, .all .yong .cakes .all-yong-type p, .all .yong .prizes .all-yong-type p {
+  width: 100%;
+  height: 40px;
+  color: black;
+  font-weight: 700;
+}
+.all .yong .all-yong .all-yong-type .down, .all .yong .cakes .all-yong-type .down, .all .yong .prizes .all-yong-type .down {
+  height: 150px;
+  display: flex;
+}
+.all .yong .all-yong .all-yong-type .down .n1, .all .yong .cakes .all-yong-type .down .n1, .all .yong .prizes .all-yong-type .down .n1 {
+  width: 112px;
+  margin-right: 50px;
+}
+.all .yong .all-yong .all-yong-type .down .n1 p, .all .yong .cakes .all-yong-type .down .n1 p, .all .yong .prizes .all-yong-type .down .n1 p {
+  text-align: center;
+}
+.all .yong:hover {
+  background-color: white;
+  color: black;
+}
+.all .yong:hover a {
+  color: black;
+}
+.all .yong:hover span {
+  color: white;
+}
+.all .yong:hover .all-yong {
+  display: block;
+}
+.all .cake:hover .cakes {
+  display: block;
+}
+.all .prize:hover .prizes {
+  display: block;
+}
+.all .cakes, .all .prizes {
+  padding: 20px;
+  box-sizing: border-box;
+  display: block;
+}
+.all .cakes .title, .all .prizes .title {
+  height: 30px;
+  font-weight: 700;
+  color: black;
+}
+.all .cakes .citys .city, .all .prizes .citys .city {
+  color: black;
+  float: left;
+  margin-right: 20px;
+  font-size: 10px;
+}
+.all .cakes .c1, .all .cakes .p1, .all .prizes .c1, .all .prizes .p1 {
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+.all .cakes .c1 p, .all .cakes .p1 p, .all .prizes .c1 p, .all .prizes .p1 p {
+  color: black;
+  text-align: center;
+}
+.all .cakes .cakes-type, .all .prizes .cakes-type {
+  height: 400px;
+}
+.all .prize .prize-pai {
+  height: 200px;
+}
+.all .prizes .prize-type {
+  height: 400px;
+}
+.all .prizes .prize-type .p-t {
+  float: left;
+  width: 80px;
+  margin-right: 40px;
+}
+.all .prizes .prize-type .p-t img {
+  width: 100%;
+}
+.all .prizes .prize-type .p-t p {
+  text-align: center;
+}
+.all .banner {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.all .banner ul {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.all .banner ul li {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: opacity 0.4s linear;
+  opacity: 0;
+}
+.all .banner ul li img {
+  width: 100%;
+}
+.all .banner li.active {
+  opacity: 1;
+}
+.all .banner ol {
+  width: 200px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.all .banner ol li {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.all .banner ol li.active {
+  background-color: cyan;
+}
+.all .banner .leftRightBox {
+  width: 60%;
+  height: 60px;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.all .banner .leftRightBox > div {
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.all .center p span a {
+  color: white;
+}
+
+.all .center p span:hover a {
+  color: cyan;
+}
+
+.tree .tree-under {
+  height: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #40A48D;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.tree .tree-under .tree-1 {
+  float: left;
+  margin: 20px 5px;
+  width: 24%;
+  height: 210px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+.tree .tree-under .tree-1 .tree-font {
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+.tree .tree-under .tree-1 .tree-font h2, .tree .tree-under .tree-1 .tree-font h3 {
+  font-size: 16px;
+}
+.tree .tree-under .tree-1 .tree-font h3 {
+  color: orangered;
+}
+.tree .tree-under .tree-1 .tree-font p {
+  font-size: 14px;
+}
+.tree .tree-under .tree-1 img {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.service {
+  padding-top: 50px;
+  height: 250px;
+  border-top: 2px solid black;
+  box-sizing: border-box;
+}
+.service div {
+  float: left;
+}
+.service .ser, .service .hot, .service .zhuan, .service .call {
+  width: 200px;
+  height: 200px;
+}
+.service .ser h3, .service .hot h3, .service .zhuan h3, .service .call h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.service .ser ul, .service .hot ul, .service .zhuan ul, .service .call ul {
+  float: left;
+  margin-right: 10px;
+}
+.service .ser ul li, .service .hot ul li, .service .zhuan ul li, .service .call ul li {
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+}
+.service .ser ul li a, .service .hot ul li a, .service .zhuan ul li a, .service .call ul li a {
+  color: black;
+}
+.service .zhuan {
+  width: 180px;
+}
+.service .call {
+  width: 220px;
+}
+.service .call p {
+  font-size: 12px;
+  height: 18px;
+}
+.service .call h2 {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: orangered;
+  color: white;
+}
+.service .app, .service .wx {
+  width: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.service .app img, .service .wx img {
+  width: 100%;
+}
+.service .app h2, .service .wx h2 {
+  font-size: 14px;
+}
+
+.below {
+  width: 100%;
+  height: 250px;
+  background-color: #232628;
+  overflow: hidden;
+}
+.below h3 {
+  width: 100%;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+.below h3 a:nth-of-type(1) {
+  padding-left: 0;
+}
+.below h3 a {
+  display: block;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  border-right: 2px solid white;
+}
+.below h3 a.last {
+  padding-right: 0;
+  border: 0;
+}
+.below p {
+  font-size: 14px;
+  color: #71797F;
+  width: 100%;
+  margin: 0 auto;
+  height: 22px;
+  line-height: 22px;
+}
+.below img:nth-of-type(1) {
+  transform: scale(0.5);
+  margin-left: -80px;
+}
+.below img:nth-of-type(2) {
+  transform: scale(0.5);
+  margin-left: -140px;
+}
+.below img:nth-of-type(3) {
+  transform: scale(0.4);
+  margin-left: -90px;
+  margin-top: -30px;
+}
+.below img:nth-of-type(4) {
+  transform: scale(0.4);
+  margin-left: -40px;
+  margin-top: -30px;
+}
+.below p:nth-last-of-type(1) {
+  margin-top: -30px;
+}
+
+.logo .search .search-result {
+  width: 350px;
+  height: 230px;
+  padding: 15px;
+  position: absolute;
+  z-index: 9;
+  background-color: white;
+  left: 20px;
+  border-radius: 0 0 10px 10px;
+  box-sizing: border-box;
+  display: none;
+}
+.logo .search .search-result li {
+  list-style: none;
+  width: 320px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  text-indent: 1em;
+}
+.logo .search .search-result li:hover {
+  background-color: #ccc;
+}
+
+/*# sourceMappingURL=index.css.map */

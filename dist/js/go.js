@@ -1,0 +1,1 @@
+"use strict";$(function(){var e=$("#go #username").value();$("#go #password").value(),$("#go #check").value();$.post("../server/global.php",e)});

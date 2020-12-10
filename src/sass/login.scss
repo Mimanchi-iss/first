@@ -1,0 +1,289 @@
+
+//t头部
+.top{
+  width: 100%;
+  height: 30px;
+  background-color: #F3F5F7;
+  font-size: 12px;
+  line-height: 30px;
+  color: black;
+  .top-left{
+    float: left;
+    width: 500px;
+    a{
+      display: inline-block;
+      position: relative;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: black;
+    }
+    a:nth-of-type(1){
+      display: inline;
+    }
+    a img{
+      position: absolute;
+      width: 100px;
+      top: 30px;
+      left: 0px;
+      display: none;
+    }
+    a:hover{
+      background-color: white;
+    }
+    a:hover img{
+      display: block;
+    }
+  }
+  .top-right{
+    float: right;
+    width: 650px;
+    // display: flex;
+  }
+  a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: orange;
+  }
+  span{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    ul{
+      color: black;
+      position: absolute;
+      width: 80px;
+      padding: 5px;
+      background-color: white;
+      z-index: 9;
+      // border: 1px solid black;
+      top: 30px;
+      left: 0px;
+      display: none;
+      li{
+      text-align: center;
+      }
+    }
+  }
+  span:hover ul{
+    display: block;
+  }
+}
+
+// logo部分
+.logo{
+  height: 85px;
+  padding-top: 15px;
+  background-color: #F7F9FA;
+  img{
+    float: left;
+    width: 250px;
+    margin-right: 100px;
+  }
+  .search{
+    width: 450px;
+    float: left;
+    position: relative;
+    input{
+      height: 55px;
+      width: 450px;
+      border: 1px solid orange;
+      border-radius: 30px;
+      padding-left: 20px;
+      padding-right: 105px;
+      box-sizing: border-box;
+    }
+    button{
+      width: 100px;
+      height: 55px;
+      border-radius: 30px;
+      position: absolute;
+      right: 0px;
+      top: 0;
+      background-color: orangered;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    ul.active{
+      display: block;
+    }
+    p{
+      width: 450px;
+      height: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding-left: 50px;
+      a{
+        height: 20px;
+        margin-right: 30px;
+        color: #BAD1EB;
+        text-decoration: none ;
+      }
+      a:hover{
+        color: orange;
+      }
+    }
+  }
+  span{
+    text-decoration: none;
+    height: 55px;
+    width: 120px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 55px;
+  }
+  a:hover{
+    color: orange;
+  }
+}
+
+//中间
+.mid{
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url(../img/login/bg.jpg);
+  background-size: 100% 500px;
+  .login-box{
+    float: right;
+    margin-top: 50px;
+    margin-right: 150px;
+    width: 300px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    // 登录方式
+    .login-type{
+      height: 10%;
+      border-bottom: 2px solid #CCC;
+      h2{
+        float: left;
+        width: 40%;
+        height: 38px;
+        font-size: 16px;
+        margin-left: 15px;
+        text-align: center;
+        line-height: 40px;
+        box-sizing: border-box;
+      }
+      h2:hover{
+        border-bottom: 2px solid orangered;
+      }
+    }
+    //验证码
+    p{
+      height: 20px;
+      margin-top: 20px;
+      a{
+        float: right;
+        margin-right: 30px;
+        font-size: 12px;
+        color: rgb(148, 141, 141);
+        text-decoration: none;
+      }
+    }
+    //表单
+    form{
+      width: 80%;
+      height: 270px;
+      margin: 0 auto;
+      overflow: hidden;
+      #username, #password{
+        border: 1px solid #ccc;
+        height: 30px;
+        margin-bottom: 15px;
+        width: 120%;
+        border-radius: 3px;
+        text-indent: 1em;
+      }
+      input::-webkit-input-placeholder {
+        /* 修改字体颜色 */
+        color: #ccc;
+        /* 修改字号，默认继承input */
+        font-size: 10px;
+        font-weight: 400;
+        /* 设置背景色 */
+        // background: #8ac6d1;
+    }
+      button{
+        background-color: orangered;
+        width: 100%;
+        height: 30px;
+        border-radius: 15px;
+        margin-top: 10px;
+        color: white;
+      }
+      a{
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+    }
+    //注册
+    .go{
+      height: 50px;
+      background-color: #F7F9FA;
+      border-radius: 0 0 20px 20px;
+      span{
+        display: block;
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+      }
+      a{
+        display: block;
+        float: right;
+        margin-top: 20px;
+        margin-right: 30px;
+        color: orangered;
+      }
+    }
+  }
+
+}
+.mid .login-box .go-form{
+  height: 310px;
+  padding-top: 30px;
+  #checknumber{
+    width: 120%;
+    border: 1px solid #ccc;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 3px 0 0 3px;
+    text-indent: 1em;
+  }
+  #check{
+    height: 30px;
+    width: 83px;
+    margin-left: -5px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.logo .search .search-result {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  z-index: 9;
+  background-color: white;
+  left: 20px;
+
+  display: none;
+  li{
+    list-style: none;
+      width: 100%;
+      height: 20px;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+      text-indent: 1em;
+  }
+  li:hover{
+    background-color: #ccc;
+  }
+}
